@@ -2407,8 +2407,8 @@ function plradded(plr)
 				infotxt.Position = UDim2.new(0,0,0.5,0)
 				infotxt.TextStrokeTransparency = 0
 				if owner then
-					txt.Text = "Script Owner (Crypt'Ed Team Leader)"
-					infotxt.Text = "Don't ask me for the 'tag' script, you only see this when you execute the script."
+					txt.Text = "Cool Guy (Very Cool)"
+					infotxt.Text = "So Cool."
 					txt.TextColor3 = Color3.fromRGB(200,90,0)
 				elseif enderhubperson then
 					txt.Text = "Ender Hub"

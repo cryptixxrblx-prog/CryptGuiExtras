@@ -2220,7 +2220,7 @@ function oimremake(mdata)
 	end
 	local muted = plr:HasTag("FUCKING SILENCED")
 	if muted then
-		cn = "hidden"
+		cn = "FUCKING SILENCED"
 		if (not on or not spychat) then
 			mdata.Text = ""
 		end
@@ -2246,17 +2246,17 @@ function oimremake(mdata)
 	local iq = nil
 	if on and spychat and plr:GetAttribute("IQ") then
 		if plr:GetAttribute("IQ") >= 200 then
-			iq = "genius \u{1F9E0}"
-			cn = "iqgenius"
+			iq = "Albert Einstein \u{1F9E0}"
+			cn = "Albert Einstein"
 		elseif plr:GetAttribute("IQ") <= 50 then
-			iq = "dumb \u{1F92A}"
-			cn = "iqdumb"
+			iq = "Dumb Bitch \u{1F92A}"
+			cn = "Dumb Bitch"
 		end
 	end
 	if isog then
-		mdata.PrefixText = "<font color=\""..namecolorshex[cn].."\"><b><font color='rgb("..tostring(namecolors[cn][1])..","..tostring(namecolors[cn][2])..","..tostring(namecolors[cn][3])..")'>["..plr.DisplayName..((hidden and " (HIDDEN CHAT)") or "")..((iq and (" ("..iq..")")) or "")..((muted and (" (FUCKING SILENCED)")) or "").."]: </font></b></font>"
+		mdata.PrefixText = "<font color=\""..namecolorshex[cn].."\"><b><font color='rgb("..tostring(namecolors[cn][1])..","..tostring(namecolors[cn][2])..","..tostring(namecolors[cn][3])..")'>["..plr.DisplayName..((Scaredy Cat and " (Scaredy Cat)") or "")..((Dumb Bitch and (" ("..Dumb Bitch..")")) or "")..((FUCKING SILENCED and (" (FUCKING SILENCED)")) or "").."]: </font></b></font>"
 	else
-		mdata.PrefixText = "<font color=\""..namecolorshex[cn].."\"><i><font color='rgb("..tostring(namecolors[cn][1])..","..tostring(namecolors[cn][2])..","..tostring(namecolors[cn][3])..")'>("..plr.DisplayName..((hidden and " (HIDDEN CHAT)") or "")..((iq and (" ("..iq..")")) or "")..((muted and (" (FUCKING SILENCED)")) or "")..") </font></i></font>"
+		mdata.PrefixText = "<font color=\""..namecolorshex[cn].."\"><i><font color='rgb("..tostring(namecolors[cn][1])..","..tostring(namecolors[cn][2])..","..tostring(namecolors[cn][3])..")'>("..plr.DisplayName..((Scaredy Cat and " (Scaredy Cat)") or "")..((Dumb Bitch and (" ("..Dumb Bitch..")")) or "")..((FUCKING SILENCED and (" (FUCKING SILENCED)")) or "")..") </font></i></font>"
 	end
 end
 game.TextChatService.OnIncomingMessage = oimremake
